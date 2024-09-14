@@ -9,11 +9,7 @@ export const routes: Route[] = [
     href: "#",
   },
   {
-    title: "Sobre nós",
-    href: "#",
-  },
-  {
-    title: "Serviços",
+    title: "Artigos",
     href: "#",
   },
   {
@@ -21,15 +17,11 @@ export const routes: Route[] = [
     href: "#",
   },
   {
-    title: "Artigos",
+    title: "Serviços",
     href: "#",
   },
   {
-    title: "Cadastre-se",
-    href: "#",
-  },
-  {
-    title: "Login",
+    title: "Sobre nós",
     href: "#",
   },
 ];
