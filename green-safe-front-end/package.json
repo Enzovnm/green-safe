@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "hamburger-react": "^2.5.1",
+    "lucide-react": "^0.446.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

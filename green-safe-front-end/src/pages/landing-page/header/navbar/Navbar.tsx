@@ -2,15 +2,16 @@ import { Route } from "../routes";
 import Logo from "../../../../assets/agriculture-logo.svg?react";
 import { useState } from "react";
 import Hamburger from "hamburger-react";
+import { Button } from "../../../../components/Button";
 interface NavbarProps {
   routes: Route[];
 }
 
 export const Navbar = ({ routes }: NavbarProps) => {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState<boolean>(false);
 
   return (
-    <nav>
+    <nav className="lg:max-w-screen-xl lg:m-auto">
       <div className="flex justify-between lg:px-0 items-center p-4">
         <div className="w-60">
           <Logo />
@@ -37,16 +38,11 @@ export const Navbar = ({ routes }: NavbarProps) => {
           <a className="mr-8 hover:opacity-80 duration-300" href="#">
             Login
           </a>
-          <button
-            type="submit"
-            className="flex justify-center gap-2 items-center mx-auto shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-emerald-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
-          >
-            Cadastre-se
-          </button>
+          <Button>Cadastre-se</Button>
         </div>
       </div>
       {isOpen && (
-        <div className="p-4 lg:hidden">
+        <div className="p-4 absolute w-full z-50 bg-white h-hero lg:hidden">
           <ul className="w-full">
             {routes.map((route) => {
               const { title, href } = route;

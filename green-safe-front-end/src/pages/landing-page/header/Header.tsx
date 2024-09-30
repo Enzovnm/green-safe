@@ -3,7 +3,7 @@ import { routes } from "./routes.ts";
 
 export const Header = () => {
   return (
-    <header className="lg:max-w-screen-xl  lg:m-auto">
+    <header className="shadow-2xl sticky top-0 bg-white z-50">
       <Navbar routes={routes} />
     </header>
   );
