@@ -12,7 +12,12 @@ export default {
       height: {
         hero: "calc(100vh - 5.5869125rem)",
       },
+      colors: {
+        "custom-gray": "#ECECEC",
+      },
+      lineClamp: {
+        8: "8",
+      },
     },
   },
-  plugins: [],
 };
