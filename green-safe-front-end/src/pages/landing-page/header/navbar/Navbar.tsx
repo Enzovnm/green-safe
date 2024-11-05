@@ -3,6 +3,7 @@ import Logo from "../../../../assets/agriculture-logo.svg?react";
 import { useState } from "react";
 import Hamburger from "hamburger-react";
 import { Button } from "../../../../components/Button";
+import { Link } from "react-router-dom";
 interface NavbarProps {
   routes: Route[];
 }
@@ -38,7 +39,9 @@ export const Navbar = ({ routes }: NavbarProps) => {
           <a className="mr-8 hover:opacity-80 duration-300" href="#">
             Login
           </a>
-          <Button>Cadastre-se</Button>
+          <Link to="/app/login">
+            <Button>Cadastre-se</Button>{" "}
+          </Link>
         </div>
       </div>
       {isOpen && (

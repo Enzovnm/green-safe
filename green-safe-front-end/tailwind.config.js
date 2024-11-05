@@ -7,7 +7,7 @@ export default {
         sans: "Inter",
       },
       backgroundImage: {
-        "hero-pattern": "url(./src/assets/hero.jpg)",
+        "hero-pattern": "url(/src/assets/hero.jpg)",
       },
       height: {
         hero: "calc(100vh - 5.5869125rem)",

@@ -6,41 +6,35 @@ interface projectItemProps {
   text: string;
   imageBanner: string;
   imageMain: string;
+  onNext: () => void;
+  onPrevious: () => void;
 }
 
-export const ProjectItem = () => {
+export const ProjectItem = ({
+  title,
+  text,
+  imageBanner,
+  imageMain,
+  onNext,
+  onPrevious,
+}: projectItemProps) => {
   return (
-    <div className="h-full">
-      <div className="w-full h-1/4 rounded-lg shadow-md">
+    <div className="h-full lg:px-0 px-4">
+      <div className="w-full lg:h-1/4 h-24  rounded-lg shadow-md">
         <img
           className="h-full w-full object-cover rounded-lg"
-          src="./src/assets/smart-tech.png"
+          src={imageBanner}
           alt="Title"
         />
       </div>
-      <div className="flex items-center h-3/4 justify-between">
-        <div className="flex-1 rounded-lg shadow-md">
-          <img
-            className="rounded-lg"
-            src="./src/assets/smart-tech(main).jpeg"
-            alt=""
-          />
+      <div className="lg:flex lg:items-center lg:h-3/4 lg:justify-between lg:py-0 py-4">
+        <div className="lg:flex-1  rounded-lg shadow-md">
+          <img className="rounded-lg" src={imageMain} alt="" />
         </div>
-        <div className="flex-1  px-8">
+        <div className="lg:flex-1 lg:py-0 py-4 lg:px-8">
           <div className="line-clamp-8">
-            <h2 className="text-xl font-medium">
-              Transformação de Lavouras com IoT
-            </h2>
-            <p className="text-justify py-3 ">
-              O projeto "Transformação de Lavouras com IoT" foi desenvolvido
-              pela GreenSafe em uma propriedade agrícola de 1.500 hectares, com
-              o objetivo de otimizar a produção e promover práticas agrícolas
-              sustentáveis. Para isso, a iniciativa visou maximizar a
-              produtividade, economizar recursos e promover a saúde do solo. A
-              implementação do projeto incluiu a instalação de sensores de
-              umidade do solo em pontos estratégicos da lavoura, permitindo o
-              monitoramento das condições de irrigação.
-            </p>
+            <h2 className="text-xl font-medium">{title}</h2>
+            <p className="text-justify py-3 ">{text}</p>
           </div>
           <div className="flex justify-between py-8 items-center">
             <div>
@@ -48,8 +42,10 @@ export const ProjectItem = () => {
             </div>
 
             <div className="space-x-4 font-semibold">
-              <a href="#">Anterior</a>
-              <a className="text-emerald-700" href="#">
+              <a className="cursor-pointer" onClick={onPrevious}>
+                Anterior
+              </a>
+              <a className="text-emerald-700 cursor-pointer" onClick={onNext}>
                 Próximo
                 <ArrowRight className="inline" size={14} />
               </a>

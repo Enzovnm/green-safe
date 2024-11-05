@@ -10,11 +10,11 @@ export const routes: Route[] = [
   },
   {
     title: "Artigos",
-    href: "#",
+    href: "#artigos",
   },
   {
     title: "Projetos",
-    href: "#",
+    href: "#projetos",
   },
   {
     title: "Serviços",
