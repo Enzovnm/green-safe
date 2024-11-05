@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "/src/assets/agriculture-logo.svg?react";
 
 export const Login = () => {

@@ -14,7 +14,7 @@ export const Articles = () => {
               alt="Article 1"
               loading="lazy"
               className="h-full"
-              src="/src/assets/article1.jpg"
+              src="/src/public/article1.jpg"
             />
             <div className="bg-black bg-opacity-80 text-white absolute bottom-0 left-0 lg:h-1/6 h-1/2 w-full p-4">
               <h2 className="font-bold text-lg">
@@ -35,7 +35,7 @@ export const Articles = () => {
                 alt="Article 2"
                 loading="lazy"
                 className="h-full w-full"
-                src="/src/assets/article2.jpg"
+                src="/src/public/article2.jpg"
               />
               <div className="bg-black bg-opacity-80 text-white absolute bottom-0 left-0 h-1/3 w-full p-2">
                 <h2 className="font-bold text-lg">A Evolução da Agricultura</h2>
@@ -50,7 +50,7 @@ export const Articles = () => {
               <img
                 alt="Article 3"
                 className="h-full w-full"
-                src="/src/assets/article3.jpg"
+                src="/src/public/article3.jpg"
               />
               <div className="bg-black bg-opacity-80 text-white absolute bottom-0 left-0 h-1/3 w-full p-2 ">
                 <h2 className="font-bold text-lg">Plantação Inteligente</h2>
@@ -65,7 +65,7 @@ export const Articles = () => {
               <img
                 alt="Article 4"
                 className="h-full w-full"
-                src="/src/assets/article4.jpg"
+                src="/src/public/article4.jpg"
               />
               <div className="bg-black bg-opacity-80 text-white absolute bottom-0 left-0 h-1/3 w-full p-2">
                 <h2 className="font-bold text-lg">
